@@ -28,10 +28,85 @@
   color: #61dafb;
 }
 
+.description {
+  width: 20%;
+}
+
+table {
+  width: 100%;
+  margin: 2em auto 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: baseline;
+}
+
+td img {
+  width: 2em;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.table-wrapper {
+  max-width: 1440px;
+  margin: 2em auto 0;
+  overflow-x: auto;
+}
+
+.page-wrapper {
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  margin: 2em auto;
+  gap: 10px;
+}
+
+.page-wrapper div {
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comments li {
+  list-style: none;
+}
+
+.comments li div {
+  width: 30%;
+  display: flex;
+  margin: 0 auto 0;
+}
+
+.comments li div button {
+  margin-left: auto;
+}
+
+@media screen and (max-width:768px) {
+  table {
+    width: 100%;
+  }
+
+  .comments li div {
+    width: initial;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
